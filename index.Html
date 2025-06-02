@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Knights</title>
+  <link rel="stylesheet" href="Main.css" />
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .home-section {
+      background-color: #f0f8ff;
+      padding: 40px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(181, 241, 0, 0.42);
+      max-width: 600px;
+      margin: 50px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .home-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #2c80b4;
+      transform: scale(1.2);
+    }
+
+
+
+    li a {
+
+      color: #5dade2;
+      text-decoration: none;
+
+    }
+
+    li a:hover {
+      transition: background-color 0.3s, transform 0.3s;
+      transform: scale(1.2);
+      color: red;
+      text-decoration: underline;
+    }
+
+    a img:hover{
+
+      transition: background-color 0.3s, transform 0.3s;
+      transform: scale(1.8);
+      color: red;
+      text-decoration: underline;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="header" style="background-color: #2c3e50 ;height: 70px;">
+
+    <div style="width: 100vw;height: 50px;text-align: center;display: flex;">
+
+      <h2 style="display: flex; margin-top: 14px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/30/30550.png" alt="logo">
+        <span style="color: #ffffff;">Knowledge</span>
+        <span style="margin-left: 5px;color: red; margin-right:200px ;">Knights</span>
+      </h2>
+
+      <div>
+        <ul style="display: flex; width: 50vw;gap: 100px;list-style: none;margin-top: 20px;">
+          <li>
+            <a href="#home.html">
+              Home</a>
+          </li>
+          <li>
+            <a href="#Course">
+              Course</a>
+          </li>
+          <li><a href="#About">About</a>
+          </li>
+          <li><a href="#Contact">Contact</a>
+          </li>
+
+          <li>
+            <button style="height: 30px;width: 150px ;background-color:#e67e22;border-radius: 15px;" onclick="Login()"
+              id="registerBtn">Login/Register</button>
+
+            <div style="position: relative;">
+              <img id="profileIcon" src="https://cdn-icons-png.flaticon.com/128/1144/1144709.png" alt="Profile"
+                style="display: none; width: 40px; height: 30px; border-radius: 50%; cursor: pointer;">
+
+              <div id="dropdownMenu"
+                style="display: none; position: absolute; top: 35px; right: 0; background-color: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; z-index: 1000;">
+                <button onclick="logout()"
+                  style="background-color: red; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Logout</button>
+              </div>
+            </div>
+          </li>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- div Section for home  -->
+
+
+  <div id="home"
+    style="width: 100vw;height:500px;background-repeat: no-repeat;background-size: cover;background-image: url(https://images.pexels.com/photos/532557/pexels-photo-532557.jpeg?auto=compress&cs=tinysrgb&w=600);">
+    <h1 style="color:white; padding-top:120px;
+    margin-left: 100px;">Learn With <br>
+      Expert Anytime <br>
+      Anywhere.</h1>
+    <h4 style="color: white;margin-left: 100px;">
+      At Knowledge Knights, we believe that education is the foundation of a brighter future. <br> Our mission is to
+      empower
+      learners of all ages with high-quality, accessible courses led by industry experts.
+      <br>
+      <input type="search" style="width: 300px;height: 30px;margin-top: 10px;border-radius:10px ;"
+        placeholder="Enter Course,Subject,Project,Teacher,Exam.....">
+
+      <button
+        style="height:30px ;width: 90px;background-color: #0088ff;color: white;border-radius: 10px; ">Search</button>
+
+
+  </div>
+
+  <!-- div for Welcome Section -->
+  <div style="width: 100vw; color: white;background-color: black;">
+    <h1 style="margin-left: 600px; margin-top: 20px;">Our Service</h1>
+  </div>
+
+
+  <div style="display: flex;" id="Course">
+    <div class="home-section">
+      <h1 style="color: #2c3e50; margin-bottom: 20px;">Welcome to Knowledge Knights</h1>
+      <p style="color: #34495e; font-size: 18px; line-height: 1.6;">
+        At <strong>Knowledge Knights</strong>, we empower learners with top-notch education. Discover a world of curated
+        courses, expert mentorship, and a community that champions your growth and success.
+      </p>
+      <a href="#courses" class="cta-button">
+        Explore Courses
+      </a>
+    </div>
+
+    <div class="home-section">
+      <h1 style="color: #2c3e50; margin-bottom: 20px;">Knowledge Knights Result Generator</h1>
+      <p style="color: #34495e; font-size: 18px; line-height: 1.6;">
+        At <strong>Knowledge Knights</strong>, Create Custom Exams in Minutes with Knowledge Knights' Exam Generator.
+        <br><a href="#courses" class="cta-button" onclick="Registration()">
+          Get Result
+        </a>
+    </div>
+
+  </div>
+
+
+  <div style="display: flex;">
+    <div class="home-section">
+      <h1 style="color: #2c3e50; margin-bottom: 20px;">Knowledge Knights Test Series</h1>
+      <p style="color: #34495e; font-size: 18px; line-height: 1.6;">
+        At <strong>Knowledge Knights</strong>, Your Road to Victory Starts Here: Master Every Exam with Our Mock Tests
+      </p>
+      <a href="#courses" class="cta-button">
+        Cheacked
+      </a>
+    </div>
+
+    <div class="home-section">
+      <h1 style="color: #2c3e50; margin-bottom: 20px;">Prepare With Us - Be Ready for Anything</h1>
+      <p style="color: #34495e; font-size: 18px; line-height: 1.6;">
+        At <strong>Knowledge Knights</strong>, Join thousands of learners who trust us to guide their exam journey.
+        Whether you're aiming for academic excellence, cracking competitive exams.
+        <br><a href="#courses" class="cta-button">
+          PrePare
+        </a>
+    </div>
+
+  </div>
+
+
+  <!-- Div Section For Contact -->
+
+
+  <div style = "background-color:#333;color: whitesmoke;align-items: center;text-align: center;"><h3>SOCIAL MEDIA LINKS</h3></div>
+
+
+    <div style="background-color: #333;">
+
+    <ul style="display: flex;height: 50px;gap: 20px;list-style: none; text-align: center;align-items: center;">
+      <li><a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/leetcode-3521542-2944960.png" alt="Leetcode" style="height: 30px; margin-left: 570px;"></a></li>
+      <li><a href=""><img src="https://static-00.iconduck.com/assets.00/github-icon-1024x1024-vu0m1lvh.png" alt="" style="height: 30px"></a></li>
+      <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/020/964/386/original/facebook-circle-icon-for-web-design-free-png.png" alt="" style="height: 30px"></a></li>
+      <li><a href=""><img src="https://freepngimg.com/download/logo/69768-logo-computer-layout-instagram-icons-png-file-hd.png" alt="Instagram" style="height: 30px"></a></li>
+      <li><a href=""><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-1024x1024-z5dvl47c.png" alt="" style="height: 30px"></a></li>
+      <li><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/2560px-YouTube_full-color_icon_(2017).svg.png" alt="" style="height: 30px"></a></li>
+      <li><a href=""><img src="https://images.yourstory.com/cs/images/companies/119169043101580097794440231905187057223611079n-1617083628661.png" alt="" style="height: 30px"></a></li>
+        
+    </ul>
+
+  </div>
+
+
+  <!-- Div Section For About -->
+
+  <div
+    style="max-width: 800px; margin: 50px auto; padding: 30px; font-family: Arial, sans-serif; line-height: 1.6; color: #333;"
+    id="About">
+    <h2 style=" text-align: center; color: #2c3e50; background-color: orange;">About Us</h2>
+    <p style="margin-top: 20px; font-size: 16px;">
+      We are a dedicated platform committed to simplifying result generation and exam preparation. Whether you're a
+      student, educator, or institution, our goal is to make result access fast, secure, and reliable. With features
+      like instant result generation, detailed performance breakdowns, and mock test integration, we empower users to
+      stay informed and prepared.
+    </p>
+    <p style="margin-top: 15px; font-size: 16px;">
+      Our platform supports multiple exam formats, including academic boards, competitive tests, and institutional
+      assessments. Trusted by thousands, we strive to ensure data accuracy, user privacy, and a seamless digital
+      experience.
+    </p>
+    <p style="margin-top: 15px; font-size: 16px;">
+      Join us on your path to academic and professional success — because your results deserve clarity, speed, and
+      trust.
+    </p>
+  </div>
+
+
+
+  <div class="header" style="background-color: #2c3e50 ;height:800px; color: white;" id="Contact">
+
+    <div
+      style="max-width: 600px; margin: 50px auto; padding: 30px; border: 1px solid #ccc; border-radius: 12px; font-family: Arial, sans-serif; padding-top: 30px;margin-top: 20px;">
+      <h2 style="text-align: center; color:white">Contact Us</h2>
+      <p style="text-align: center; color: white; margin-bottom: 30px;padding-top: 10px;">
+        Have questions or need help? Fill out the form below and we'll get back to you shortly.
+      </p>
+
+      <form>
+        <label for="name" style="display: block; margin-bottom: 5px; color: white;">Your Name*</label>
+        <input type="text" id="name" name="name" required
+          style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+
+        <label for="email" style="display: block; margin-bottom: 5px; color: white;">Email Address*</label>
+        <input type="email" id="email" name="email" required
+          style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+
+        <label for="subject" style="display: block; margin-bottom: 5px; color: white;">Subject</label>
+        <input type="text" id="subject" name="subject"
+          style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+
+        <label for="message" style="display: block; margin-bottom: 5px; color: white;">Message*</label>
+        <textarea id="message" name="message" rows="5" required
+          style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+
+        <button type="submit"
+          style="width: 100%; padding: 12px; background-color: #3498db; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+          Send Message
+        </button>
+      </form>
+
+      <div style="margin-top: 30px; text-align: center; color: white;">
+        <p>Email: <a href="mailto:support@yourwebsite.com" style="color:white #3498db;">support@yourwebsite.com</a></p>
+        <p>Phone: +91-9876543210</p>
+        <p>Support Hours: Mon–Sat, 10:00 AM – 6:00 PM IST</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+
+  function Login() {
+    window.open("Login.html", "_blank");
+  }
+
+
+  function Registration() {
+    window.open("Registration.html", "_blank")
+  }
+
+
+  window.onload = function () {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn === "true") {
+      // User is logged in
+      document.getElementById("registerBtn").style.display = "none";
+      document.getElementById("profileIcon").style.display = "inline-block";
+    } else {
+      // User NOT logged in
+      document.getElementById("registerBtn").style.display = "inline-block";
+      document.getElementById("profileIcon").style.display = "none";
+    }
+  };
+
+  document.getElementById("profileIcon").addEventListener("click", function () {
+  const dropdown = document.getElementById("dropdownMenu");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+});
+
+// Logout function
+function logout() {
+  localStorage.clear(); // Clears all login and user data
+  alert("You have been logged out.");
+  location.reload(); // Reload page to reflect logout
+}
+
+
+
+</script>
+
+
+</html>
