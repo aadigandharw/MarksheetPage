@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+
+    <style>
+        .label {
+            padding-left: 100px;
+            gap: 100px;
+            padding-top: 20px;
+        }
+
+        .input {
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        .label1 {
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .input1 {
+            padding-top: 20px;
+        }
+
+        button:hover {
+            transition: all 0.3s ease;
+            background-color: #7C3AED;
+            /* Indigo-700 */
+            transform: scale(1.18);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header style="width: 99vw;text-align: center;background-color:#8B5CF6;color:white;">
+        <h2 style="border: 2px solid;padding-top: 10px;padding-bottom: 10px;">Please Complete Registration To Generate
+            Your Result</h2>
+    </header>
+
+
+    <!-- this section is used to To Complete the registration -->
+    <div style="width: 99vw;">
+
+        <form action="
+        " style="border: 2px solid;">
+
+            <h4 style="margin-left: 600px;">Note:Please Fill The From Carefully</h4>
+
+
+
+            <h3 class="label"><label for="">Bacis Details:</label></h3>
+
+            <table>
+                <tr>
+                    <td class="label"><label for="first">First Name:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Your Fisrt Name" id="FirstName"></td>
+
+
+                    <td class="label"><label for="middel">Middle Name:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Your Middle Name" id="MiddleName"></td>
+
+                    <td class="label"><label for="last">Last Name:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Your Last Name" id="LastName"></td>
+
+
+                </tr>
+
+                <tr>
+                    <td class="label"><label for="father's Name">Father's Name:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Your Father's Name" id="FatherName"></td>
+                    <td class="label"><label for="Mother's Name">Mother's Name:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Your Mother's Name" id="MotherName"></td>
+                </tr>
+
+                <tr>
+                    <td class="label"><label for="DOB">Enter Your Date OF Birth</label></td>
+                    <td class="input"><input type="date" placeholder="Enter Date Of Birth" id="DOB"></td>
+                </tr>
+
+            </table>
+
+            <table>
+
+                <tr>
+                    <td class="label"><label for="Gender">Gender:</label></td>
+
+                    <td class="label1" style="padding-left: 10px;"><label for="Male" value="Gender">Male</label></td>
+                    <td class="input1"><input type="radio" value="Male" name="Gender"></td>
+
+                    <td class="label1"><label for="Female" value="Gender">Female</label></td>
+                    <td class="input1"><input type="radio" value="Female" name="Gender"></td>
+
+                    <td class="label1"><label for="Other" value="Gender">Other</label></td>
+                    <td class="input1"><input type="radio" value="Other" name="Gender"></td>
+
+                    <td class="label1" style="padding-left: 200px;"><label for="Caste">Caste:</label></td>
+
+                    <td class="label1" style="padding-left: 10px;"><label for="SC" value="Caste">SC</label></td>
+                    <td class="input1"><input type="radio" value="SC" name="Caste"></td>
+
+                    <td class="label1" style="padding-left: 10px;"><label for="ST" value="Caste">ST</label></td>
+                    <td class="input1"><input type="radio" value="ST" name="Caste"></td>
+
+
+                    <td class="label1" style="padding-left: 10px;"><label for="OBC" value="Caste">OBC</label></td>
+                    <td class="input1"><input type="radio" value="OBC" name="Caste"></td>
+
+                    <td class="label1" style="padding-left: 10px;"><label for="GENRAL" value="Caste">GENRAL</label></td>
+                    <td class="input1"><input type="radio" value="GENRAL" name="Caste"></td>
+
+
+            </table>
+
+            <!-- Table Tag For Address -->
+
+            <h3 class="label">Current/Permanent Address:</h3>
+
+
+            <table>
+
+                <tr>
+                    <td class="label"><label for="House">House Number / Building Number:</label></td>
+                    <td class="input"><input  type="number" placeholder="Enter House Number/Name" id="House">
+                    </td>
+
+
+
+                    <td class="label"><label for="Street">Street/Road/Area:</label></td>
+                    <td class="input"><input type="text" placeholder="Enter Street/Road/Area" id="Street">
+                    </td>
+
+
+
+
+                    <td class="label"><label for="Landmark">Landmark(optional):</label></td>
+                    <td class="input"><input type="text"  placeholder="Enter Landmark" id="Landmark"></td>
+
+                </tr>
+
+
+                <td class="label"><label for="City">City/Town/Village:</label></td>
+                <td class="input"><input type="text"  placeholder="Enter City/Town/Village" id="City"></td>
+
+
+
+                <td class="label"><label for="District">District:</label></td>
+                <td class="input"><input type="text"  placeholder="Enter District" id="District"></td>
+
+
+
+                <td class="label"><label for="Pin code">PIN Code / ZIP Code:</label></td>
+                <td class="input"><input type="number" placeholder="Enter PIN Code / ZIP Code" id="PinCode">
+                </td>
+
+
+                <tr>
+
+                    <td class="label"><label for="State">State:</label></td>
+                    <td class="input"><input type="text"  placeholder="Enter Your State" id="State"></td>
+
+
+                    <td class="label"><label for="Country">Country:</label></td>
+                    <td class="input"><input type="text"  placeholder="Enter Country" id="Country"></td>
+                </tr>
+
+
+
+            </table>
+
+            <!-- Table Tag For Contact -->
+
+            <table>
+
+                <h3 class="label">Contact Details:</h3>
+
+
+                <tr>
+
+                    <td class="label"><label for="State">Mobile Number:</label></td>
+                    <td class="input"><input type="number" placeholder="Enter Your Mobile Number" id="MobileNo"></td>
+
+
+                    <td class="label"><label for="Alternative">Alternative Mobile Number:</label></td>
+                    <td class="input"><input type="number" placeholder="Enter Mobile Number" id="AlterNo"></td>
+                </tr>
+
+                <tr>
+
+                    <td class="label"><label for="State">Email:</label></td>
+                    <td class="input"><input type="email" placeholder="Enter Your EmailAdrress" id="Email"></td>
+
+
+                    <td class="label"><label for="Country">Parent's Mobile Number:</label></td>
+                    <td class="input"><input type="number" placeholder="Enter Mobile Number" id="ParentNo"></td>
+                </tr>
+
+            </table>
+
+            <!-- Table Tag For Education Details -->
+
+
+            <h3 class="label">Education Details:<span>Please Enter This field CareFully It Is Important For Your
+                    Result.....</span></h3>
+
+            <table>
+                <tr>
+                    <td class=label>
+                        <label for="fullName">FullName of Student:</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" placeholder="Enter As Per YourIdCard" id="FullName">
+                    </td>
+
+                    <td class=label>
+                        <label for="RollNo.">RollNumber:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Your RollNo" id="RollNo">
+                    </td>
+
+                    <td class=label>
+                        <label for="Class">Class:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter your Class" id="Class">
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class=label>
+                        <label for="Section">Section:</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" placeholder="Enter A or B or C" id="Section">
+                    </td>
+
+                    <td class=label>
+                        <label for="ExamType">ExamType:</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" placeholder="April-May or Nov-Dec" id="ExamType">
+                    </td>
+
+
+
+                </tr>
+
+
+
+            </table>
+
+
+            <!-- Table Section for Subjects Marks -->
+
+            <h3 class="label">Subject Section:Enter your Marks CareFully</h3>
+
+            <table style="padding-bottom: 30px;">
+
+                <tr>
+                    <td class=label>
+                        <label for="Hindi">Hindi:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Between 0 to 75" id="Hindi">
+                    </td>
+
+                    <td class=label>
+                        <label for="Chemistry">Chemistry:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Between 0 to 75" id="Chemistry">
+                    </td>
+
+                    <td class=label>
+                        <label for="Physics">Physics:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Between 0 to 75" id="Physics">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td class=label>
+                        <label for="Mathmatics">Mathmatics:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Between 0 to 75" id="Mathmatics">
+                    </td>
+
+                    <td class=label>
+                        <label for="English">English:</label>
+                    </td>
+                    <td class="input">
+                        <input type="number" placeholder="Enter Between 0 to 75" id="English">
+                    </td>
+                </tr>
+
+
+
+
+            </table>
+
+
+            <button style="margin-left: 670px; height: 30px;width: 150px;background-color: #8B5CF6;color: white; border-radius: 20px;margin-bottom: 20px; 
+                " type="button" onclick="Result()">Get
+                Result</button>
+
+
+
+        </form>
+
+
+    </div>
+
+
+</body>
+
+
+<script>
+    function Result(){
+
+        // Here Is The Basic Details Js Code 
+
+        let F_Name = document.getElementById('FirstName').value
+        localStorage.setItem('FirstName', F_Name)
+
+        let M_Name = document.getElementById('MiddleName').value
+        localStorage.setItem('MiddleName', M_Name)
+
+        let L_Name = document.getElementById('LastName').value
+        localStorage.setItem('LastName', L_Name)
+
+        let FatherName = document.getElementById('FatherName').value
+        localStorage.setItem('FatherName', FatherName)
+
+        let MotherName = document.getElementById('MotherName').value
+        localStorage.setItem('MotherName', MotherName)
+
+        let DOB = document.getElementById('DOB').value
+        localStorage.setItem('DOB', DOB)
+
+        let Gender = document.querySelector('input[name="Gender"]:checked');
+
+
+        if (Gender) {
+            localStorage.setItem('Gender', Gender.value); // Safe: only runs if a selection exists
+        } else {
+            alert("Please select a gender.");
+        }
+
+        let Caste = document.querySelector('input[name="Caste"]:checked')
+        if (Caste) {
+            localStorage.setItem('Caste', Caste.value); // Safe: only runs if a selection exists
+        } else {
+            alert("Please select a Caste.");
+        }
+
+        //This Section Is For Address JS Code 
+
+        let House = document.getElementById('House').value
+        localStorage.setItem('House', House)
+
+        let Street = document.getElementById('Street').value
+        localStorage.setItem('Street', Street)
+
+        let Landmark = document.getElementById('Landmark').value
+        localStorage.setItem('Landmark', Landmark)
+
+        let City = document.getElementById('City').value
+        localStorage.setItem('City', City)
+
+        let District = document.getElementById('District').value
+        localStorage.setItem('District', District)
+
+        let State = document.getElementById('State').value
+        localStorage.setItem('State', State)
+
+        let Country = document.getElementById('Country').value
+        localStorage.setItem('Country', Country)
+
+        let PinCode = document.getElementById('PinCode').value
+        localStorage.setItem('PinCode', PinCode)
+
+
+        // This Section Is For Contact Js Code..
+
+        let MobileNo = document.getElementById('MobileNo').value
+        localStorage.setItem('MobileNo', MobileNo)
+
+        let AlterNo = document.getElementById('AlterNo').value
+        localStorage.setItem('AlterNo', AlterNo)
+
+        let = document.getElementById('House').value
+        localStorage.setItem('House', House)
+
+        let Email = document.getElementById('Email').value
+        localStorage.setItem('Email', Email)
+
+        let ParentNo = document.getElementById('ParentNo').value
+        localStorage.setItem('ParentNo', ParentNo)
+
+        //This Section Is For Education Js Code..
+
+        let FullName = document.getElementById('FullName').value
+        localStorage.setItem('FullName', FullName)
+
+        let RollNo = document.getElementById('RollNo').value
+        localStorage.setItem('RollNo', RollNo)
+
+        let Section = document.getElementById('Section').value
+        localStorage.setItem('Section', Section)
+
+        let Class = document.getElementById('Class').value
+        localStorage.setItem('Class', Class)
+
+        let ExamType = document.getElementById('ExamType').value
+        localStorage.setItem('ExamType', ExamType)
+
+
+        // Table Section for Subjects Marks Js Code
+
+        let Hindi = document.getElementById('Hindi').value
+        localStorage.setItem('Hindi', Hindi)
+
+        let English = document.getElementById('English').value
+        localStorage.setItem('English', English)
+
+        let Chemistry = document.getElementById('Chemistry').value
+        localStorage.setItem('Chemistry', Chemistry)
+
+        let Physics = document.getElementById('Physics').value
+        localStorage.setItem('Physics', Physics)
+
+        let Mathmatics = document.getElementById('Mathmatics').value
+        localStorage.setItem('Mathmatics', Mathmatics)
+
+        alert("Registration Complete")
+
+        document.querySelector("form").reset();
+
+        window.open("FinalResult.html", "_blank")
+
+
+
+
+
+
+
+
+    }
+</script>
+
+
+
+</html>
